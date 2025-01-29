@@ -21,7 +21,7 @@ This tool is designed for **general legal education** and does not store or proc
 🔹 **Search engine indexing is disabled** to keep it a niche tool, not a public database.  
 
 ## 🔹 Live Demo
-🚀 **[Coming Soon** (Once GitHub Pages is set up)
+🚀 **[View Steve’s Legal Guide](https://ethandler.github.io/Steves-legal-guide/)**
 
 ## 🔹 Disclaimer
 > **This site provides general legal references and does not offer legal advice.**  
