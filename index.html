@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Steve's Legal Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            position: relative;
+            cursor: pointer;
+        }
+        .button:hover {
+            background: #0056b3;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            max-height: 200px;
+            overflow-y: auto;
+            border-radius: 5px;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown .arrow {
+            margin-left: 10px;
+            font-size: 12px;
+        }
+        .instructions {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        .disclaimer {
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".button").forEach(function(button) {
+                button.addEventListener("click", function(event) {
+                    event.stopPropagation();
+                    let dropdown = this.nextElementSibling;
+                    if (dropdown.style.display === "block") {
+                        dropdown.style.display = "none";
+                    } else {
+                        document.querySelectorAll(".dropdown-content").forEach(function(content) {
+                            content.style.display = "none";
+                        });
+                        dropdown.style.display = "block";
+                    }
+                });
+            });
+
+            document.addEventListener("click", function() {
+                document.querySelectorAll(".dropdown-content").forEach(function(content) {
+                    content.style.display = "none";
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Steve's Legal Guide</h1>
+        <p>A simplified legal reference for criminal defense in Yavapai County, Arizona.</p>
+
+        <div class="section">
+            <h2>🔹 Legal Templates</h2>
+            <p>Access Yavapai County-specific legal forms:</p>
+            <div class="dropdown">
+                <div class="button">View Templates <span class="arrow">▼</span></div>
+                <div class="dropdown-content">
+                    <a href="https://courts.yavapaiaz.gov/Forms-Instructions" target="_blank">Main: Yavapai County Forms</a>
+                    <a href="https://courts.yavapaiaz.gov/Departments/Law-Library/Self-Service-Center" target="_blank">Self-Service Center</a>
+                    <a href="https://courts.yavapaiaz.gov/Departments/Justice-Courts/Forms" target="_blank">Justice Court Forms</a>
+                    <a href="https://www.azcourts.gov/selfservicecenter/Criminal-Law/Criminal-Law-Forms" target="_blank">AZ Criminal Law Forms</a>
+                    <a href="https://www.azcourthelp.org/home/az-forms" target="_blank">AZCourtHelp.org Forms</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔹 Case Law & Research</h2>
+            <p>Explore relevant case law and legal research resources:</p>
+            <div class="dropdown">
+                <div class="button">Search Case Law <span class="arrow">▼</span></div>
+                <div class="dropdown-content">
+                    <a href="https://caselaw.findlaw.com/court/az-supreme-court/" target="_blank">AZ Supreme Court Cases</a>
+                    <a href="https://www.azcourts.gov/casesummaries" target="_blank">Arizona Court Summaries</a>
+                    <a href="https://libguides.law.asu.edu/freeandlowcost/arizona" target="_blank">ASU Law: Free AZ Legal Research</a>
+                    <a href="https://govt.westlaw.com/azrules/Browse/Home/Arizona/ArizonaCourtRules" target="_blank">Westlaw: Yavapai Court Rules</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔹 Example Court Responses</h2>
+            <p>These are general legal defense strategies you can use and customize:</p>
+            <ul>
+                <li><strong>Exhaustion Defense:</strong>  
+                    "Your Honor, I was working extreme hours to support my family.  
+                    This was not reckless intent—this was fatigue and an accident."</li>
+                <li><strong>No Criminal Intent:</strong>  
+                    "I immediately stopped once I realized the mistake.  
+                    I take full responsibility, but this was not an intentional crime."</li>
+                <li><strong>Character-Based Defense:</strong>  
+                    "I have no criminal history and have always acted responsibly.  
+                    I’ve been a hard-working member of the community for years."</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🔹 Quick Reference Guide</h2>
+            <p>Fast lookups for legal statutes and precedents:</p>
+            <div class="dropdown">
+                <div class="button">Quick Reference <span class="arrow">▼</span></div>
+                <div class="dropdown-content">
+                    <a href="https://www.azleg.gov/arstitle/" target="_blank">Arizona Revised Statutes</a>
+                    <a href="https://www.azcourts.gov/opinions" target="_blank">Arizona Court Opinions</a>
+                    <a href="https://www.azbar.org/for-legal-professionals/sections/criminal-justice/criminal-justice-resources/" target="_blank">State Bar of Arizona Resources</a>
+                </div>
+            </div>
+        </div>
+
+        <p class="disclaimer">
+            Disclaimer: This site provides general legal references and does not offer legal advice. 
+            For personalized legal assistance, consult a licensed attorney.
+        </p>
+    </div>
+</body>
+</html>
